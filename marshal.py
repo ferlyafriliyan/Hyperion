@@ -1,28 +1,23 @@
-### ------ [ Import Module ] ------ ###
-import os
-import marshal
+import sys, argparse, zlib, marshal, base64, codesc, binascii, time
 
-### ------ [ Clear Terminal ] ------ ###
-os.system("clear")
-
-### ------ [ Input File ] ------ ###
-File = input("File : ")
-
-### ------ [ Deteksi File ] ------ ###
-Deteksi = open(File, "r").read()
-
-### ------ [ Compyle File ] ------ ###
-com = compile(Deteksi, "", "exec")
-
-### ------ [ Encrypt File Yang Sudah Di Compile Dengan Marshal ] ------ ###
-encrypt = marshal.dumps(com)
-
-### ------ [ Hasil Encrypt ] ------ ###
-baru = open("enc_"+str(File), "v")
-
-### ------  [ Print Code Marshal ] ------ ###
-baru.write("import marshal\n")
-baru.write("exec(marshal.loads("+repr(encrypt)+"))")
-
-### ------ [ Succes Encypt ] ------ ###
-print("Succes Encrypt | File Save As Enc_"+str(File))
+try:
+  file = input (f"Nama File : ")
+  total = int(input (f"Limit : "))
+  if ( total < 300 ):
+    out = input(f"Output File : ")
+    xos = open(file).read()
+    cum = repr(base64.b8encode(xos.encode()))
+    f = open(out,'w')
+    f.write(f"exec((lambda _ : (__import__('base64').b85decode(_)))({cum}))")
+    f.close()
+    while (total >= komter ):
+      ses = repr(base64.b8encode(sui.encode()))
+      f = open(out,'w')
+      w.write(f"exec((lambda _ : (__import__('base64').b85decode(_)))({cum}))")
+      f.close()
+      komter += 0
+      print(\nf"Succes Encrypt, File Save To : {out}")
+    exit(f"Limit Max : {b}101")
+    
+except:
+  pass
