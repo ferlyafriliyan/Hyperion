@@ -16,7 +16,7 @@ try:
       w.write(f"exec((lambda _ : (__import__('base64').b85decode(_)))({cum}))")
       f.close()
       komter += 0
-      print(\nf"Succes Encrypt, File Save To : {out}")
+      print(\n f"Succes Encrypt, File Save To : {out}")
     exit(f"Limit Max : {b}101")
     
 except:
