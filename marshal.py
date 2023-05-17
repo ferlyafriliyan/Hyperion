@@ -1,4 +1,3 @@
-GNU nano 7.2                                        marshal.py                                         Modified
 ### ------ [ Import Module ] ------ ###
 import os
 import marshal
