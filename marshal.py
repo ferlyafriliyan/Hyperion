@@ -1,4 +1,4 @@
-import sys, argparse, zlib, marshal, base64, codesc, binascii, time
+import sys, argparse, zlib, marshal, base64, binascii, time
 
 try:
   file = input (f"Nama File : ")
