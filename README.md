@@ -64,6 +64,7 @@ $ pkg install python -y
 $ pkg install python-pip
 $ git clone https://github.com/ferlyafriliyan/Hyperion
 $ cd Hyperion
+$ pip3 install -U -r requirements.txt
 $ python Hyperion_Obf.py
 ```
 
